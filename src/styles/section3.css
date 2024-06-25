@@ -1,0 +1,296 @@
+.section-3-wrapper {
+  padding-top: 1rem;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.section-3 {
+  width: 1320px;
+  margin: 5rem 140px; /* 140px margin on both sides */
+  display: flex;
+  align-items: flex-start;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.image-container {
+  margin: 0 1px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 507px;
+  margin-right: 56px;
+}
+
+.s3-image1 {
+  width: 399px;
+  height: 416px;
+  border-radius: 16px;
+}
+
+.s3-image2 {
+  width: 242.816px;
+  height: 294px;
+  border-radius: 16px;
+  border: 5.177px solid #FFF;
+  position: absolute;
+  top: 151px;
+  left: 267.18px;
+}
+
+.s3-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(38, 120, 209, 0.05);
+  margin-bottom: 12px;
+}
+
+.se-tag-about {
+  color: var(--Building-clean-2-950, #1A3351);
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.s3-image3 {
+  width: 30px;
+  height: 30px;
+}
+
+.s3-text-1 {
+  color: #101828;
+  font-family: 'Open Sans';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  width: 100%;
+  position: relative; /* Create positioning context for children */
+}
+
+.s3-color-text {
+  color: var(--Building-clean-2-700-main, #2678D1);
+  font-family: 'Open Sans';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  position: relative; /* Ensure correct z-index stacking */
+  z-index: 2; /* Higher z-index to be above the underline */
+}
+
+.cleaner-color-underline {
+  position: absolute;
+  top: 70%; /* Adjust based on text positioning */
+  left: 0; /* Adjust as needed */
+  height: 23px;
+  flex-shrink: 0;
+  stroke-width: 8px;
+  stroke: var(--Building-clean-1-500-main, #81CD28);
+  stroke-linecap: round; /* Make corners round */
+  z-index: 1; /* Ensure SVG is behind the text */
+}
+
+.s3-small-text {
+  color: var(--Neutral-700, #344054);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 16px 0;
+}
+
+.s3-small-bold {
+  color: var(--Building-clean-2-700-main, #2678D1);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.s3-small-image {
+  position: absolute;
+  top: 62%; /* You can adjust this to align with the specific text */
+  right: 30px; /* 140px margin from the section */
+  width: 162.226px;
+  height: 178.733px;
+  transform: rotate(-15deg);
+  flex-shrink: 0;
+  opacity: 0.2;
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 1536px) {
+  .section-3 {
+    margin: 5rem 100px; 
+  }
+
+  .s3-text-1, .s3-color-text {
+    font-size: 45px; /* Adjust font size */
+  }
+
+  .s3-small-text {
+    font-size: 17px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 1280px) {
+  .section-3 {
+    max-width: 1180px;
+    margin: 5rem 30px; /* Adjust margins */
+  }
+ 
+  .image-container {
+    width: 407px;
+    margin-right: 50px;
+  }
+  .s3-image1 {
+    width: 290px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  
+  .s3-image2 {
+    width: 150.816px;
+    height: 190px;
+    position: absolute;
+    top: 140px;
+    left: 207.18px;
+  }
+  
+  .about {
+    padding: 6px 10px;
+  }
+  
+  .se-tag-about {
+    font-size: 16px;
+  }
+  
+  .s3-text-1, .s3-color-text {
+    width: 540px;
+    font-size: 35px; /* Adjust font size */
+  }
+
+  .cleaner-color-underline {
+    width: 270px;
+    top: 65%; /* Adjust based on text positioning */
+    height: 25px;
+  }
+  
+  .s3-small-text {
+    width: 530px;
+    font-size: 14px;
+  }
+  
+  .s3-small-bold {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-3 {
+    max-width: 850px;
+    margin: 5rem 0px 0 40px; /* Adjust margins */
+  }
+  .content-wrapper {
+ 
+    width: 100%;
+  }
+  .image-container {
+    width: 307px;
+    margin-right: 45px;
+  }
+  .s3-image1 {
+    width: 250px;
+    height: 240px;
+    border-radius: 16px;
+  }
+  
+  .s3-image2 {
+    width: 130.816px;
+    height: 190px;
+    position: absolute;
+    top: 81px;
+    left: 177.18px;
+  }
+  
+  .about {
+    padding: 6px 10px;
+  }
+  
+  .se-tag-about {
+    font-size: 16px;
+  }
+  
+  .s3-text-1, .s3-color-text {
+    width: 420px;
+    font-size: 30px; /* Adjust font size */
+  }
+
+  .cleaner-color-underline {
+    width: 185px;
+    top: 55%; /* Adjust based on text positioning */
+    height: 25px;
+  }
+  
+  .s3-small-text {
+    width: 390px;
+    font-size: 14px;
+  }
+  
+  .s3-small-bold {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 780px) {
+  .section-3 {
+    margin: 5rem 20px; /* Adjust margins */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s3-text-1, .s3-color-text {
+    font-size: 30px; /* Adjust font size */
+  }
+
+  .s3-small-text {
+    font-size: 13px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-3 {
+    margin: 5rem 10px; /* Adjust margins */
+  }
+
+  .s3-text-1, .s3-color-text {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .s3-small-text {
+    font-size: 12px; /* Adjust font size */
+  }
+}

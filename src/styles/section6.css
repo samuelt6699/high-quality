@@ -1,0 +1,139 @@
+.section-6 {
+  display: flex;
+  justify-content: center; /* Center the section-wrapper horizontally */
+  align-items: center;    /* Center the section-wrapper vertically */
+  position: relative;     /* Set position so absolute positioning of the image works */
+  margin-bottom: 120px;
+  border-radius: 30px;
+}
+
+.section-wrapper {
+  width: 1320px;
+  height: 489px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #235185;
+  position: relative;   
+  z-index: 1;             /* Ensure the wrapper is above the image */
+  display: flex;          /* Use flex properties to center content inside this box */
+  justify-content: center;/* Center content horizontally */
+  text-align: center;     /* Center the text */
+  overflow: hidden;       /* Ensures the content respects the border radius */
+}
+
+.svg-1-container {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  width: 224px;
+  height: 224px;
+}
+.svg-2-container{
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+  width: 224px;
+  height: 224px;
+  flex-shrink: 0;
+  fill: linear-gradient(214deg, #235185 12.35%, rgba(255, 255, 255, 0.00) 87.31%);
+}
+.svg-3-container{
+  position: absolute;
+  bottom: -5px;
+  left: -50px;
+}
+
+.rotated-image {
+  width: 334.961px;
+  height: 369.045px;
+  transform: rotate(-1deg);
+  flex-shrink: 0;
+  position: absolute;      /* Ensure the image doesn't affect document flow */
+  left: 1px;               /* Adjust as needed to move the image to its desired spot */
+  top: 300px;              /* Adjust as needed to move the image to its desired spot */
+  z-index: 0;              /* Ensure the image is below the main box */
+}
+
+.content-box {
+  margin-top: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: #FFF;  
+}
+
+.s6-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;             /* Adds 20px between headline-text and description-text */
+}
+
+.headline-text {
+  width: 798px;
+  font-family: "Open Sans";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;    /* 67.2px */
+}
+
+.description-text {
+  width: 797px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;    /* 27px */
+}
+
+.contect-box {
+  display: flex;
+  width: 256px;
+  height: 30px;
+  padding: 21px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--W, #FFF);
+  cursor: pointer;
+}
+
+.contect-text {
+  color: var(--Building-clean-2-700-main, #2678D1);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;    /* 18px */
+}
+
+@media (max-width: 1536px) {
+  .section-wrapper {
+    width: 1100px;
+    padding: 0 10px;
+  }
+
+  .rotated-image, .rotated-image.fixed {
+    width: 300.961px;
+    height: 339.045px;
+  }
+  .svg-container {
+  
+  }
+  
+
+  .headline-text {
+    font-size: 48px;    /* Smaller font size for screens 1536px width or smaller */
+    line-height: 110%;   /* Adjust line height to match new font size */
+  }
+
+  .description-text {
+    font-size: 16px;    /* Smaller font size for screens 1536px width or smaller */
+    line-height: 140%;   /* Adjust line height to match new font size */
+  }
+}

@@ -1,0 +1,156 @@
+.main-header {
+  border-bottom: 1px solid #EAECF0;
+  background: #FFF;
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  padding: 8px 140px;
+  height: 96px;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  z-index: 1000;
+  position: fixed; /* Make the header fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-logo {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Navigation Container Styles */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 51px; /* Space between links and button */
+  flex-grow: 1;
+}
+
+.header-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray-Black-400, #4A4C56);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.header-link:hover {
+  color: var(--Building-clean-2-700-main, #2678D1);
+  text-decoration: underline;
+  transform: scale(1.1); /* Scale the link instead of changing font size */
+}
+
+/* Contact Us Button Styles */
+.contact-us {
+  border-radius: 8px;
+  background: var(--Building-clean-2-700-main, #2678D1);
+  padding: 12px 24px; /* Slightly adjusted for professional look */
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+  border: none;
+  font-family: 'Open Sans';
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-us:hover {
+  background: #0b5ba3; /* Darker shade for the hover effect */
+}
+
+/* Media Queries */
+
+@media (max-width: 1536px) {
+  .main-header {
+    max-width: 1536px;
+    padding: 8px 100px;  /* Adjust padding for smaller screens */
+  }
+
+  .header-nav {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-header {
+    width: 100%;
+    padding: 8px 40px;
+  }
+
+  .header-nav {
+    gap: 30px;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .contact-us {
+    font-size: 16px;
+    padding: 10px 20px; /* Adjusted padding for better proportions */
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .main-header {
+    width: 100%;
+    padding: 8px 20px;
+  }
+
+  .header-logo {
+    margin-bottom: 10px;
+  }
+
+  .header-nav {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .header-link {
+    font-size: 16px; /* Slightly larger font for readability */
+  }
+
+  .contact-us {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    max-width: 480px;
+    padding: 8px 10px;
+  }
+
+  .header-nav {
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-link {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .contact-us {
+    font-size: 14px;
+    padding: 8px 12px; /* Adjusted padding for smaller screens */
+    text-align: center;
+  }
+}

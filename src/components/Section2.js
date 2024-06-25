@@ -1,12 +1,18 @@
-import React from "react";
-import "../components/styles/section2.css";
+import React, { useState } from 'react';
+import "../styles/section2.css";
+import ContactUs from './ContactUs';
 
 const Section2 = () => {
+  const [isContactOpen, setContactOpen] = useState(false);
+
+  const toggleContactPopup = () => {
+    setContactOpen(!isContactOpen);
+  };
   return (
     <section className="section-2">
       <div className="text-box">
         <div className="s2-text">
-          We Are Here With Expert 
+          We Are Here With Expert&nbsp;
           <span className="cleaner">
             Cleaner
             <svg
@@ -29,15 +35,20 @@ const Section2 = () => {
 
         <div className="s2-text-box">
           <div className="s2-small-text">
-            Forget about elbow grease! Powerful formulas tackle even the toughest messes on contact, leaving surfaces sparkling clean with minimal effort.
+            Forget about elbow grease! Powerful formulas tackle even the
+            toughest messes on contact, leaving surfaces sparkling clean with
+            minimal effort.
           </div>
-          <div className="s2-book">Book An Appointment</div>
+          <button className='s2-book' onClick={toggleContactPopup}>Book An Appointment</button>
+          
         </div>
       </div>
-      <div className="s2-image-containor">
-      <img src='s2-image.png' alt='Logo' className="s2-image" />
+      <div className="s2-image-container">
+        <img src="big-image.png" alt="Cleaner" className="s2-image" />
       </div>
+      {isContactOpen && <ContactUs toggle={toggleContactPopup} />}
     </section>
+    
   );
 };
 
