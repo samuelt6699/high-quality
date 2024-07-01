@@ -1,5 +1,7 @@
 import "../styles/section6.css";
 
+
+
 const Section6 = () => {
   return (
     <div className="section-6">

@@ -12,7 +12,7 @@ const Header = ({ scrollToSection, refs }) => {
   return (
     <>
       <section className='main-header'>
-        <img src='logo2.png' alt='Logo' className='header-logo' onClick={() => scrollToSection(refs.top)} />
+        <img src='logo2.ico' alt='Logo' className='header-logo' onClick={() => scrollToSection(refs.top)} />
         <div className='header-nav'>
           <div className='header-link' onClick={() => scrollToSection(refs.top)}>Home</div>
           <div className='header-link' onClick={() => scrollToSection(refs.aboutCompany)}>About Company</div>
